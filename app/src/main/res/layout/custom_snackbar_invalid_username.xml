@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:background="@color/red"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/invalid_iv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/icon_invalid"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="17dp" />
+
+    <TextView
+        android:id="@+id/invalid_tv"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:gravity="left"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</LinearLayout>

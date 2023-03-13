@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.profile.EditProfileFragment">
+
+    <ImageView
+        android:id="@+id/editprofilebackground_iv"
+        android:layout_width="match_parent"
+        android:layout_height="323dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_profiledetails_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="323dp"
+        android:scaleType="fitXY"
+        android:background="#D9092963"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/editProfileBack_btn"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_back_header_white"
+        app:layout_constraintStart_toStartOf="@+id/editprofilebackground_iv"
+        app:layout_constraintTop_toTopOf="@+id/editprofilebackground_iv" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26.49dp"
+        android:fontFamily="@font/biko_bold"
+        android:text="Edit Profile"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileBack_btn"
+        app:layout_goneMarginTop="70.19dp" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="181dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_image_iv"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:shapeAppearanceOverlay="@style/RoundedSquare"
+            android:src="@drawable/profileimage" />
+
+        <ImageView
+            android:id="@+id/camera_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="88dp"
+            android:src="@drawable/icn_change_profilepic" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/changeimage_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:text="Change image"
+        android:textAlignment="textEnd"
+        android:textColor="#EE5C4D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/editprofilebackground_iv">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            tools:layout_editor_absoluteX="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                app:layout_goneMarginTop="30dp"
+                tools:layout_editor_absoluteX="0dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:layout_marginTop="33dp"
+                    android:hint="Full name"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeWidth="1dp"
+                    app:hintTextColor="#7A7A7A">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/full_name_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:fontFamily="@font/proxima_nova_semibold"
+                        android:inputType="textPersonName"
+                        android:lineHeight="20dp"
+                        android:textCursorDrawable="@drawable/cursor_custom"
+                        android:textColor="@color/dark_blue_092963"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Username"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeWidth="1dp"
+                    app:hintTextColor="#7A7A7A">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/user_name_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:fontFamily="@font/proxima_nova_semibold"
+                        android:inputType="textPersonName"
+                        android:lineHeight="20dp"
+                        android:textCursorDrawable="@drawable/cursor_custom"
+                        android:textColor="@color/dark_blue_092963"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Email"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeWidth="1dp"
+                    app:hintTextColor="#7A7A7A">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:fontFamily="@font/proxima_nova_semibold"
+                        android:inputType="textPersonName"
+                        android:lineHeight="20dp"
+                        android:textCursorDrawable="@drawable/cursor_custom"
+                        android:textColor="@color/dark_blue_092963"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Mobile number"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeWidth="1dp"
+                    app:hintTextColor="#7A7A7A">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/mblNo_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:fontFamily="@font/proxima_nova_semibold"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:lineHeight="20dp"
+                        android:textCursorDrawable="@drawable/cursor_custom"
+                        android:textColor="@color/dark_blue_092963"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Occupation"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeWidth="1dp"
+                    app:hintTextColor="#7A7A7A">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/occupation_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:fontFamily="@font/proxima_nova_semibold"
+                        android:inputType="textPersonName"
+                        android:lineHeight="20dp"
+                        android:textCursorDrawable="@drawable/cursor_custom"
+                        android:textColor="@color/dark_blue_092963"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Gender"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeWidth="1dp"
+                    app:hintTextColor="#7A7A7A">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/gender_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:fontFamily="@font/proxima_nova_semibold"
+                        android:inputType="textPersonName"
+                        android:lineHeight="20dp"
+                        android:textCursorDrawable="@drawable/cursor_custom"
+                        android:textColor="@color/dark_blue_092963"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Date of Birth"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeWidth="1dp"
+                    app:hintTextColor="#7A7A7A">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/DOB_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:fontFamily="@font/proxima_nova_semibold"
+                        android:inputType="date"
+                        android:lineHeight="20dp"
+                        android:textCursorDrawable="@drawable/cursor_custom"
+                        android:textColor="@color/dark_blue_092963"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Twitter Link"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeWidth="1dp"
+                    app:hintTextColor="#7A7A7A">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/twitterLink_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:fontFamily="@font/proxima_nova_semibold"
+                        android:inputType="textPersonName"
+                        android:lineHeight="20dp"
+                        android:textCursorDrawable="@drawable/cursor_custom"
+                        android:textColor="@color/dark_blue_092963"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Facebook Link"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeWidth="1dp"
+                    app:hintTextColor="#7A7A7A">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/facebookLink_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:fontFamily="@font/proxima_nova_semibold"
+                        android:inputType="textPersonName"
+                        android:lineHeight="20dp"
+                        android:textCursorDrawable="@drawable/cursor_custom"
+                        android:textColor="@color/dark_blue_092963"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/save_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="@drawable/custom_button_solid"
+                    android:fontFamily="@font/proxima_nova_semibold"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="327dp"
+                    android:layout_height="46dp" />
+
+                <View
+                    android:layout_width="327dp"
+                    android:layout_height="46dp" />
+
+                <View
+                    android:layout_width="327dp"
+                    android:layout_height="46dp" />
+
+                <View
+                    android:layout_width="327dp"
+                    android:layout_height="46dp" />
+
+                <View
+                    android:layout_width="327dp"
+                    android:layout_height="46dp" />
+
+                <View
+                    android:layout_width="327dp"
+                    android:layout_height="46dp" />
+
+                <View
+                    android:layout_width="327dp"
+                    android:layout_height="46dp" />
+
+                <View
+                    android:layout_width="327dp"
+                    android:layout_height="46dp" />
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

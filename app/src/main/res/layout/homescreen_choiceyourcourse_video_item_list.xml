@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="142dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="20dp"
+    app:cardCornerRadius="6dp"
+    app:cardBackgroundColor="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="@dimen/cardview_default_elevation">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/choiceyourcoursevideoimage_iv"
+                    android:layout_width="142dp"
+                    android:layout_height="82dp"
+                    app:shapeAppearanceOverlay="@style/RoundedSquare"
+                    android:background="@drawable/custom_homescreen_video_background"
+                    android:src="@drawable/img_course1_bg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="64dp"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/allcourse_categories_frame_box"
+                    android:fontFamily="@font/proxima_nova_medium"
+                    android:gravity="center"
+                    android:lineHeight="9dp"
+                    android:text=" Design "
+                    android:paddingStart="3dp"
+                    android:paddingEnd="3dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:textColor="#373737"
+                    android:textSize="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/course_title"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:text="Learn Figma - UI/UX Design Essential Training"
+                android:textColor="#2B2B2B"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/course_chapter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="10dp"
+                android:text="7 Chapter"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:textSize="12dp"
+                android:textColor="#7A7A7A"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>

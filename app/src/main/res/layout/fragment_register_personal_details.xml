@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.loginregister.RegisterPersonalDetailsFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="64dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Personal Details"
+            android:fontFamily="@font/biko_bold"
+            android:textSize="26sp"
+            android:lineHeight="35dp"
+            android:textAlignment="viewStart"
+            android:textColor="#2B2B2B"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Please fill out the fields below so we can learn some information about you."
+            android:textSize="16sp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:textColor="@color/grey"
+            android:lineHeight="20dp"
+            android:textAlignment="viewStart"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:layout_marginTop="30dp"
+            android:text="Mobile number"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:textSize="14sp"
+            android:lineHeight="17dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/grey"/>
+
+        <TextView
+            android:id="@+id/phone_no_textview"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginTop="7dp"
+            android:text="+919876543211"
+            android:textSize="20sp"
+            android:lineHeight="24dp"
+            android:textAlignment="viewStart"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:textColor="#2BB5F4"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginTop="33dp"
+            app:boxStrokeColor="@color/blue"
+            android:hint="Full name"
+            app:boxStrokeWidth="1dp"
+            app:hintTextColor="@color/grey">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/full_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/grey"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:foregroundTint="@color/blue"
+                android:inputType="textPersonName"
+                android:lineHeight="20dp"
+                android:textColor="@color/blue"
+                android:textCursorDrawable="@drawable/cursor_custom"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginTop="14dp"
+            app:boxStrokeColor="@color/blue"
+            android:hint="Username"
+            android:textCursorDrawable="@color/grey"
+            android:backgroundTint="@color/grey"
+            android:foregroundTint="@color/blue"
+            app:boxStrokeWidth="1dp"
+            app:hintTextColor="@color/grey"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/user_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:textSize="16sp"
+                android:lineHeight="20dp"
+                android:textCursorDrawable="@drawable/cursor_custom"
+                android:textColor="@color/blue"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginTop="14dp"
+            android:textCursorDrawable="@color/grey"
+            android:backgroundTint="@color/grey"
+            android:foregroundTint="@color/blue"
+            app:boxStrokeColor="@color/blue"
+            android:hint="Email"
+            app:boxStrokeWidth="1dp"
+            app:hintTextColor="@color/grey">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_et"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:textSize="16sp"
+                android:lineHeight="20dp"
+                android:textCursorDrawable="@drawable/cursor_custom"
+                android:textColor="@color/blue"
+                android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginTop="14dp"
+            app:endIconContentDescription="Minium requirement"
+            app:boxStrokeColor="@color/blue"
+            android:textCursorDrawable="@color/grey"
+            android:backgroundTint="@color/grey"
+            android:foregroundTint="@color/blue"
+            android:hint="Password"
+            app:boxStrokeWidth="1dp"
+            app:endIconCheckable="true"
+            app:endIconDrawable="@drawable/btn_info"
+            app:hintTextColor="@color/grey">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_et"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:textSize="16sp"
+                android:lineHeight="20dp"
+                android:textCursorDrawable="@drawable/cursor_custom"
+                android:textColor="@color/blue"
+                android:inputType="textWebPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginTop="14dp"
+            app:boxStrokeColor="@color/blue"
+            android:textCursorDrawable="@color/grey"
+            android:backgroundTint="@color/grey"
+            android:foregroundTint="@color/blue"
+            android:hint="Confirm Password"
+            app:boxStrokeWidth="1dp"
+            app:hintTextColor="@color/grey">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirm_password_et"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:textSize="16sp"
+                android:lineHeight="20dp"
+                android:textCursorDrawable="@drawable/cursor_custom"
+                android:textColor="@color/blue"
+                android:inputType="textWebPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/send_personal_data"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="81dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/custom_button_solid"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:text="Register"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

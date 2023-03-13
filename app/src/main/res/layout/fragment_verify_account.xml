@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrain_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.appcompat.widget.Toolbar
+        android:id="@+id/verifyAccount_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/icon_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verifyAccount_Toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/verify_account_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:width="175dp"
+                android:height="35dp"
+                android:fontFamily="@font/biko_bold"
+                android:text="@string/verify_account"
+                android:textColor="@color/grey_black"
+                android:textSize="26sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/description_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                android:width="327dp"
+                android:height="40dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:text="@string/please_fill"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/verify_account_tv" />
+
+            <LinearLayout
+                android:id="@+id/otp_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="59dp"
+                android:layout_marginEnd="87dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/description_tv">
+
+                <EditText
+                    android:id="@+id/inputCode"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/grey"
+                    android:cursorVisible="true"
+                    android:focusedByDefault="true"
+                    android:fontFamily="@font/proxima_nova_semibold"
+                    android:foregroundTint="@color/blue"
+                    android:foregroundTintMode="multiply"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:letterSpacing="1"
+                    android:lineSpacingMultiplier="1.25"
+                    android:maxLength="1"
+                    android:textColor="@color/blue"
+                    android:textCursorDrawable="@drawable/custom_text_indicator"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/inputCode2"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:backgroundTint="@color/grey"
+                    android:cursorVisible="true"
+                    android:focusedByDefault="true"
+                    android:fontFamily="@font/proxima_nova_semibold"
+                    android:foregroundTint="@color/blue"
+                    android:foregroundTintMode="multiply"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:lineSpacingMultiplier="1.25"
+                    android:maxLength="1"
+                    android:textColor="@color/blue"
+                    android:textCursorDrawable="@drawable/custom_text_indicator"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/inputCode3"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:backgroundTint="@color/grey"
+                    android:cursorVisible="true"
+                    android:focusedByDefault="true"
+                    android:fontFamily="@font/proxima_nova_semibold"
+                    android:foregroundTint="@color/blue"
+                    android:foregroundTintMode="multiply"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:lineSpacingMultiplier="1.25"
+                    android:maxLength="1"
+                    android:textColor="@color/blue"
+                    android:textCursorDrawable="@drawable/custom_text_indicator"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/inputCode4"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:backgroundTint="@color/grey"
+                    android:cursorVisible="true"
+                    android:focusedByDefault="true"
+                    android:fontFamily="@font/proxima_nova_semibold"
+                    android:foregroundTint="@color/blue"
+                    android:foregroundTintMode="multiply"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:lineSpacingMultiplier="1.25"
+                    android:maxLength="1"
+                    android:textColor="@color/blue"
+                    android:textCursorDrawable="@drawable/custom_text_indicator"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/otp_invalid_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="95dp"
+                android:layout_marginEnd="87dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/description_tv">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/otp_invalid"
+                    android:gravity="bottom" />
+
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/otp_invalid"
+                    android:gravity="bottom" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/otp_invalid"
+                    android:gravity="bottom" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/otp_invalid"
+                    android:gravity="bottom" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/otp_valid_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="95dp"
+                android:layout_marginEnd="87dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/description_tv">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/otp_valid"
+                    android:gravity="bottom" />
+
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/otp_valid"
+                    android:gravity="bottom" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/otp_valid"
+                    android:gravity="bottom" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/otp_valid"
+                    android:gravity="bottom" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="40.5dp"
+                android:layout_marginEnd="105dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/otp_layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proxima_nova_regular"
+                    android:text="@string/didn_t_recieve_a_code"
+                    android:textColor="@color/grey"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/resend_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:gravity="center"
+                    android:text="@string/resend"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/verify_btn"
+                android:layout_width="327dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="320dp"
+                android:background="@drawable/custom_button_solid"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:text="@string/verify"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_layout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

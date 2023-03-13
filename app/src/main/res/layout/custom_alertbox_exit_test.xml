@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_alertbox"
+    app:cardCornerRadius="15.4dp">
+
+    <RelativeLayout
+        android:id="@+id/cardView_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/alertTitle"
+            android:layout_width="297dp"
+            android:layout_height="105.05dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="#D1FFFFFF"
+            android:fontFamily="@font/sf_pro_text_semibold"
+            android:gravity="center"
+            android:text="Are you sure do you want to exit the test"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="48.4dp"
+            android:layout_below="@id/alertTitle"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custom_alertbox_button_left"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:gravity="center"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="#007AFF"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/exit_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custom_alertbox_button_right"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:gravity="center"
+                android:text="Exit"
+                android:textAllCaps="false"
+                android:textColor="#007AFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

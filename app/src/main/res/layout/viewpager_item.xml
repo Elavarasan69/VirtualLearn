@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<layout-->
+<!--    >-->
+
+<!--    <data>-->
+<!--        <variable-->
+<!--            name="welcome"-->
+<!--            type="com.robosoft.virtuallearnproject.dataclass.WelcomeDataClass" />-->
+<!--    </data>-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_holder"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/biko_bold"
+        android:lineHeight="35dp"
+        android:textColor="#2B2B2B"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_holder"
+        tools:text="@string/account_tracking_title" />
+
+    <TextView
+        android:id="@+id/description_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:lineHeight="20dp"
+        android:textColor="#7A7A7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_holder" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--</layout>-->

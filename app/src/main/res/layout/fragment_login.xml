@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrain_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/welcomeback"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="170dp"
+            android:fontFamily="@font/biko_bold"
+            android:lineHeight="35dp"
+            android:text="Welcome Back!"
+            android:textAlignment="textStart"
+            android:textColor="#2B2B2B"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/easy"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:lineHeight="20dp"
+            android:text="@string/easy_to_learn_anytime_and_anywhere_login_to_your_account"
+            android:textAlignment="textStart"
+            android:textColor="@color/grey"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcomeback" />
+
+        <LinearLayout
+            android:id="@+id/web_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="23.5dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/easy">
+
+            <Button
+                android:id="@+id/btnfacebook"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_web_login_background"
+                android:drawableTop="@drawable/facebook_1_2x"
+                android:paddingTop="15dp"
+                app:layout_constraintEnd_toStartOf="@+id/btnGoogle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/easy" />
+
+
+            <Button
+                android:id="@+id/btnGoogle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_web_login_background"
+                android:drawableTop="@drawable/google_1_2x"
+                android:paddingTop="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/easy" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:text="Username"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/web_layout" />
+
+        <EditText
+            android:id="@+id/user_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="@color/grey"
+            android:cursorVisible="true"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:foregroundTint="@color/blue"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:lineHeight="20dp"
+            android:textColor="@color/blue"
+            android:textCursorDrawable="@drawable/custom_text_indicator"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_name" />
+
+        <ImageView
+            android:id="@+id/green"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/icon_textfield_right"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_name" />
+
+        <ImageView
+            android:id="@+id/red"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/icon_textfield_wrong"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_name" />
+
+        <ImageView
+            android:id="@+id/green_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="23dp"
+            android:src="@drawable/custom_underline_green"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_name" />
+
+        <ImageView
+            android:id="@+id/red_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/custom_underline_red"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_name" />
+
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:text="Password"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_name_et" />
+
+
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginEnd="23dp"
+            android:backgroundTint="@color/grey"
+            android:cursorVisible="true"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:foregroundTint="@color/blue"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:lineHeight="20dp"
+            android:textColor="@color/blue"
+            android:textCursorDrawable="@drawable/custom_text_indicator"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
+
+        <ImageView
+            android:id="@+id/green_pwd"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/icon_textfield_right"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password" />
+
+        <ImageView
+            android:id="@+id/red_pwd"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/icon_textfield_wrong"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password" />
+
+        <ImageView
+            android:id="@+id/green_line_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="23dp"
+            android:src="@drawable/custom_underline_green"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password" />
+
+        <ImageView
+            android:id="@+id/red_line_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/custom_underline_red"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password" />
+
+        <TextView
+            android:id="@+id/forgotPasswordBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:lineHeight="20dp"
+            android:paddingStart="9dp"
+            android:text="Forgot Password"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_et" />
+
+
+        <Button
+            android:id="@+id/welcomebacklogin_btn"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/custom_button_solid"
+            android:backgroundTint="@color/colorAccent"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forgotPasswordBtn" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcomebacklogin_btn">
+
+            <TextView
+                android:id="@+id/already_acc"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:lineHeight="20dp"
+                android:text="@string/don_t_have_a_account"
+                android:textAlignment="center"
+                android:textColor="#7A7A7A"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/wlcmBackRegisterBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:lineHeight="20dp"
+                android:paddingStart="9dp"
+                android:text="@string/register"
+                android:textAlignment="center"
+                android:textColor="@color/orange"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

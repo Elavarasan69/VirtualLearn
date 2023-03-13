@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="297dp"
+    android:layout_height="243dp"
+    app:cardBackgroundColor="#D1FFFFFF"
+    app:cardCornerRadius="15.4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/alertTitle"
+            android:layout_width="268.4dp"
+            android:layout_height="35.2dp"
+            android:layout_marginStart="14.3dp"
+            android:layout_marginLeft="14.3dp"
+            android:layout_marginTop="39.3dp"
+            android:layout_marginEnd="14.3dp"
+            android:layout_marginRight="14.3dp"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:text="Your lesson paused at 1.21 Do you want to continue watching?"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/positive_btn"
+            android:layout_width="250dp"
+            android:layout_height="46dp"
+            android:layout_below="@+id/alertTitle"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="23.5dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/custom_button_solid"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:text="Continue Watching"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/negative_btn"
+            android:layout_width="250dp"
+            android:layout_height="46dp"
+            android:layout_below="@+id/positive_btn"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="34dp"
+            android:background="@drawable/custom_button_solid"
+            android:backgroundTint="@color/dark_blue_092963"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:text="Watch from Beginning"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

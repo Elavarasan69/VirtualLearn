@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.Search.HomeToSearchScreenFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/searchback_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/ic_back_arrow"
+            android:background="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/search_tv"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:gravity="center"
+            android:text="Search"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:textSize="20sp"
+            android:textColor="#373737"
+            android:lineHeight="28dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toEndOf="@+id/searchback_btn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/searchscreensearch_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintTop_toBottomOf="@id/search_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/search_box_style">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginBottom="11dp"
+                    android:src="@drawable/icon_search"
+                    android:background="@color/white"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginBottom="9dp"
+                    android:gravity="center_vertical"
+                    android:background="#00ffffff"
+                    android:layout_weight="1"
+                    android:hint="Search"/>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/searchfilter_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="0dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icn_filter_search"/>
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

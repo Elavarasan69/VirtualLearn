@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="288dp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginEnd="21dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/coursetogetstart_iv"
+                android:layout_width="288dp"
+                android:layout_height="134dp"
+                app:shapeAppearanceOverlay="@style/RoundedSquare"
+                android:background="@drawable/custom_homescreen_video_background"
+                android:src="@drawable/img_course1_design"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginStart="120dp"
+                android:src="@drawable/ic_baseline_play_arrow_24"
+                android:background="@drawable/custom_play_pause_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/course_title"
+            android:layout_width="288dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="9dp"
+            android:text="Complete Blender Creator: Learn 3D Modelling for Beginners"
+            android:fontFamily="@font/proxima_nova_medium"
+            android:textSize="16sp"
+            android:lineHeight="20dp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textAlignment="viewStart"
+            android:textColor="#373737"/>
+
+        <LinearLayout
+            android:layout_width="288dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/course_chapter"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:text="15 Chapter"
+                android:gravity="center"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:textSize="13.46sp"
+                android:lineHeight="16dp"
+                android:textAlignment="viewStart"
+                android:textColor="#7A7A7A"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/course_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_marginStart="4dp"
+                android:drawableStart="@drawable/ic_baseline_access_time_24"
+                android:text=" 1:30:20"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:textSize="11.54dp"
+                android:lineHeight="14dp"
+                android:textAlignment="viewStart"
+                android:gravity="center"
+                android:textColor="#7A7A7A"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.activities.IndividualCourseActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/course_header_layout"
+        layout="@layout/course_header" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/course_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="#EE5C4D"
+        app:tabIndicatorHeight="2dp"
+        app:tabSelectedTextColor="#EE5C4D"
+        app:tabTextColor="#7A7A7A" />
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/course_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/joincourse_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_solid"
+        android:fontFamily="@font/proxima_nova_semibold"
+        android:text="Join Course"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>
+
+    </ScrollView>
+
+
+    <!--    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-->

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".ui.fragments.testresult.ResultFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/background_img"
+            android:layout_width="0dp"
+            android:layout_height="265dp"
+            android:background="@color/dark_blue_092963"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/close_icon"
+            android:layout_width="14.5dp"
+            android:layout_height="14.5dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="29dp"
+            android:src="@drawable/icn_close_white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/score_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/test_textview_background"
+            android:fontFamily="@font/biko_regular"
+            android:paddingStart="10dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/white"
+            android:textSize="42dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/close_icon" />
+
+        <TextView
+            android:id="@+id/chapter_title"
+            android:layout_width="245dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/biko_bold"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/score_tv"
+            app:layout_constraintStart_toEndOf="@+id/score_tv"
+            app:layout_constraintTop_toTopOf="@+id/score_tv" />
+
+        <TextView
+            android:id="@+id/course_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="29dp"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:paddingEnd="24dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_title" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/score_cardView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="42dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/course_title"
+            app:layout_goneMarginStart="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:fontFamily="@font/proxima_nova_medium"
+                        android:text="Passing Grade"
+                        android:textColor="#373737"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/passing_grade_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/proxima_nova_medium"
+                        android:layout_gravity="center"
+                        android:textColor="#2BB5F4" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="15dp"
+                    android:background="#7A7A7A" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/proxima_nova_medium"
+                        android:text="Correct"
+                        android:textColor="#373737"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/correct_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/proxima_nova_medium"
+                        android:textColor="#2BB5F4" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="20dp"
+                    android:background="#7A7A7A" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/proxima_nova_medium"
+                        android:text="Wrong"
+                        android:textColor="#373737"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/wrong_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/proxima_nova_medium"
+                        android:textColor="#2BB5F4" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="461dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/background_img">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/list_of_questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/proxima_nova_medium"
+            android:text="List of Questions"
+            android:textColor="#7A7A7A"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/score_cardView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/questionRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="24dp"
+            tools:listitem="@layout/result_tab"
+            tools:itemCount="5"
+            app:layout_constraintTop_toBottomOf="@+id/list_of_questions" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

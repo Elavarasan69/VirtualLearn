@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="500dp"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.course.ChaptersFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/proxima_nova_semibold"
+        android:paddingHorizontal="24dp"
+        android:text="Course Content"
+        android:textColor="@color/color_2b2b2b"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/course_desc_short"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/proxima_nova_medium"
+        android:paddingHorizontal="24dp"
+        android:textColor="@color/color_2b2b2b"
+        android:textSize="12sp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ExpandableListView
+                android:layout_marginHorizontal="24dp"
+                android:id="@+id/chapter_expandable_list"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:minHeight="500dp"
+                android:layout_marginTop="36dp"
+                android:layout_weight="1"
+                android:childDivider="@android:color/transparent"
+                android:divider="@color/white"
+                android:dividerHeight="0dp"
+                android:groupIndicator="@null" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <!--    <Button-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:textAllCaps="false"-->
+    <!--        android:text="Join Couse"-->
+    <!--        android:backgroundTint="#EE5C4D"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:fontFamily="@font/proxima_nova_semibold"-->
+    <!--        android:background="@drawable/custom_button_solid"-->
+    <!--        android:textSize="16sp"-->
+    <!--        />-->
+</LinearLayout>
+

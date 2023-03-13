@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.categories.IndividualCategorieOnClickDetailScreenFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/inividualcategoriedetailback_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="24dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_back_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/individualcategoriessearch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="24dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inividualcategoriedetailback_btn">
+
+            <TextView
+                android:id="@+id/category_title"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Design"
+                android:fontFamily="@font/biko_bold"
+                android:textSize="26sp"
+                android:lineHeight="35dp"
+                android:textAlignment="viewStart"
+                android:textColor="#2B2B2B"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="20dp"
+                android:text="Courses to get you started"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:textSize="18sp"
+                android:lineHeight="22dp"
+                android:textAlignment="viewStart"
+                android:textColor="#2B2B2B"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/course_started_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="30dp"
+                android:text="Featured courses"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:textSize="18sp"
+                android:lineHeight="22dp"
+                android:textAlignment="viewStart"
+                android:textColor="#2B2B2B"/>
+            
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/featurecCourseRecycleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/featured_courses_item_list"
+                android:layout_marginTop="17dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="30dp"
+                android:text="Subcategories"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textSize="18sp"
+                android:lineHeight="22dp"
+                android:textColor="#2B2B2B"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/subcategories_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                tools:listitem="@layout/subcategories_grid_item_list"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/subcategoriesvideo_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:listitem="@layout/subcategorie_video_list_item"/>
+
+            <TextView
+                android:id="@+id/allcourse_tv"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="30dp"
+                android:text="All courses "
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:textSize="18sp"
+                android:lineHeight="22dp"
+                android:textColor="#2B2B2B"/>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:layout_marginBottom="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/allCourseRecycleView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="15dp"
+                        tools:listitem="@layout/choiceyourcourse_allcourse_list_items"/>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Bottomsheetfragment"
+    android:background="@drawable/bottom_sheet_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/searchfilter_tv"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Search Filter"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:textSize="18sp"
+            android:textColor="#2B2B2B"
+            android:lineHeight="22dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/searchfilterclose_btn"
+            android:layout_width="11dp"
+            android:layout_height="11dp"
+            android:layout_marginTop="35.5dp"
+            android:layout_marginEnd="31.5dp"
+            android:src="@drawable/icn_close_filter"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/searchfilter_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:text="Categories"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:textSize="18sp"
+                android:textAlignment="viewStart"
+                android:textColor="#2B2B2B"
+                android:lineHeight="22dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="14dp">
+
+                <LinearLayout
+                    android:layout_width="83dp"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/search_categories_frame_box">
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/icn_categories_design"/>
+                    <TextView
+                        android:layout_width="38dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="Design"
+                        android:textSize="12dp"
+                        android:textColor="#2B2B2B"
+                        android:fontFamily="@font/proxima_nova_medium"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="147dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/search_categories_frame_box">
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/icn_categories_developer"/>
+                    <TextView
+                        android:layout_width="102dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="Web Development"
+                        android:textSize="12dp"
+                        android:textColor="#2B2B2B"
+                        android:fontFamily="@font/proxima_nova_medium"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="93dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/search_categories_frame_box">
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/icn_categories_business"/>
+                    <TextView
+                        android:layout_width="48dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="Business"
+                        android:textSize="12dp"
+                        android:textColor="#2B2B2B"
+                        android:fontFamily="@font/proxima_nova_medium"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="132dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/search_categories_frame_box">
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/icn_categories_fitness"/>
+
+                    <TextView
+                        android:layout_width="88dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/proxima_nova_medium"
+                        android:text="Health &amp; Fitness"
+                        android:textColor="#2B2B2B"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="76dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/search_categories_frame_box">
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/icn_categories_music"/>
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="Music"
+                        android:textSize="12dp"
+                        android:textColor="#2B2B2B"
+                        android:fontFamily="@font/proxima_nova_medium"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="95dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/search_categories_frame_box">
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/icn_categories_teaching"/>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="Teaching"
+                        android:textSize="12dp"
+                        android:textColor="#2B2B2B"
+                        android:fontFamily="@font/proxima_nova_medium"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="117dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/search_categories_frame_box">
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/icn_categories_it"/>
+                    <TextView
+                        android:layout_width="73dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="IT &amp; Software"
+                        android:textSize="12dp"
+                        android:textColor="#2B2B2B"
+                        android:fontFamily="@font/proxima_nova_medium"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="99dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/search_categories_frame_box">
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/icn_categories_marketing"/>
+                    <TextView
+                        android:layout_width="54dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="Marketing"
+                        android:textSize="12dp"
+                        android:textColor="#2B2B2B"
+                        android:fontFamily="@font/proxima_nova_medium"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="26dp"
+                android:text="Duration"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:textSize="18sp"
+                android:textAlignment="viewStart"
+                android:textColor="#2B2B2B"
+                android:lineHeight="22dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="101dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/search_categories_frame_box"
+                    android:text="5/10 Chapters"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/proxima_nova_medium"
+                    android:textColor="#2B2B2B"
+                    android:lineHeight="15dp"/>
+
+                <TextView
+                    android:layout_width="101dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="18dp"
+                    android:background="@drawable/search_categories_frame_box"
+                    android:text="10/20 Chapters"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/proxima_nova_medium"
+                    android:textColor="#2B2B2B"
+                    android:lineHeight="15dp"/>
+
+                <TextView
+                    android:layout_width="101dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="18dp"
+                    android:background="@drawable/search_categories_frame_box"
+                    android:text="20/30 Chapters"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/proxima_nova_medium"
+                    android:textColor="#2B2B2B"
+                    android:lineHeight="15dp"/>
+
+                <TextView
+                    android:layout_width="101dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/search_categories_frame_box"
+                    android:text="30/40 Chapters"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/proxima_nova_medium"
+                    android:textColor="#2B2B2B"
+                    android:lineHeight="15dp"/>
+
+                <TextView
+                    android:layout_width="101dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="18dp"
+                    android:background="@drawable/search_categories_frame_box"
+                    android:text="50+ Chapters"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/proxima_nova_medium"
+                    android:textColor="#2B2B2B"
+                    android:lineHeight="15dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/applyfilter_btn"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_button_solid"
+                android:text="Apply Filter"
+                android:textAllCaps="false"
+                android:letterSpacing="0.01"
+                android:gravity="center"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:textSize="16sp"
+                android:lineHeight="20dp"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/clearall_btn"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Clear All"
+                android:textAllCaps="false"
+                android:textColor="#373737"
+                android:letterSpacing="0.01"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:textSize="16sp"
+                android:lineHeight="20dp"
+                android:gravity="center"
+                android:background="@drawable/custom_clear_all_button_background"/>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

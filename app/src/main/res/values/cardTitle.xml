@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="cardTitles">
+
+        <item>Design</item>
+        <item>Development</item>
+        <item>Business</item>
+        <item>Music</item>
+        <item>Finance</item>
+        <item>Health &amp; Fitness</item>
+        <item>IT &amp; Software</item>
+    </string-array>
+</resources>

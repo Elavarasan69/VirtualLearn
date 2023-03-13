@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style
+        name="tabText"
+        parent="@style/TextAppearance.AppCompat">
+        <item name="android:fontFamily">Proxima Nova</item>
+        <item name="android:textColor">#7A7A7A</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="RoundedSquare">
+        <item name="cornerSize">10%</item>
+    </style>
+
+
+    <style name="borderradius">
+        <item name="cornerRadius">6dp</item>
+    </style>
+
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/custom_alertbox</item>
+        <item name="android:radius">25dp</item>
+        <item name="android:height">154dp</item>
+        <item name="android:width">297dp</item>
+    </style>
+</resources>

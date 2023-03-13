@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+   tools:context=".ui.fragments.loginregister.RegistrationSuccessFragment">
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/img_register_sucess_illustration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="168dp"
+            android:layout_marginEnd="68dp"
+            android:src="@drawable/img_register_sucess_illustration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="126dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="126dp"
+            android:fontFamily="@font/biko_bold"
+            android:lineHeight="35dp"
+            android:text="Success!"
+            android:textColor="#2B2B2B"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@id/txt_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_register_sucess_illustration" />
+
+        <TextView
+            android:id="@+id/txt_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:lineHeight="20dp"
+            android:text="@string/account_created"
+            android:textAlignment="center"
+            android:textColor="#7A7A7A"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_success" />
+
+        <TextView
+            android:id="@+id/txt_lets_get_started"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="125.5dp"
+            android:layout_marginTop="115dp"
+            android:layout_marginEnd="125.5dp"
+            android:layout_marginBottom="55dp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:text="Lets Gets Started"
+            android:textColor="#EE5C4D"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_description" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

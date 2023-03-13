@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">VirtualLearnProject</string>
+    <string name="please_fill">Please fill in the verification code that has been sent to your mobile number.</string>
+    <string name="verify">Verify</string>
+    <string name="verify_account">Verify Account</string>
+    <string name="resend">Resend</string>
+    <string name="didn_t_recieve_a_code">Didn’t receive a code?</string>
+    <string name="next">next</string>
+    <string name="learner_engagement_title">Learner \nEngagement</string>
+    <string name="learner_engagement">Interactive features mirror the traditional classroom experience and learners receive feedback to increase long-term retention, tripling learning efficacy over standard video.</string>
+    <string name="seamless_workflow_titel">Seamless \nWorkflow</string>
+    <string name="seamless_workflow">Sync rosters, create and assign impactful video experiences, enrich your flipped classroom, and streamline tedious grading.</string>
+    <string name="account_tracking_title">Account \nTracking</string>
+    <string name="account_tracking">Receive immediate, accessible data (both performance and behavior-based) to effectively remediate concepts, automatically assign grades, and address deficiencies.</string>
+    <string name="are_you_ready_to_study">Are you ready to study easily in a virtual way?</string>
+    <string name="by_creating_new_account">By creating new account, you agree to our</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="account_created">Your VirtualLearn account has been \nsuccessfully created!</string>
+    <string name="password_changed_message">Your password has been successfully \nchanged. You can now Login with your new \npassword</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="easy_to_learn_anytime_and_anywhere_login_to_your_account">Easy to learn anytime and anywhere. Login to your account</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_a_account">Don’t have a account?</string>
+    <string name="register">Register</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="please_enter_your_phone_number_you_will_receive_a_code_to_create_a_new_password">Please enter your phone number. You will receive a code to create a new password.</string>
+    <string name="enter_your_mobile_number">Enter your mobile number</string>
+    <string name="_91">+91</string>
+    <string name="terms">These Terms of Services (Terms) were last updated on November 14, 2022.
+        <string name="string_2">\n\nVirtualLearn’s mission is to improve lives through learning. We enable anyone anywhere to create and share educational courses (instructors) and to enroll in these educational courses to learn (students). We consider our marketplace model the best way to offer valuable educational content to our users. We need rules to keep our platform and services safe for you, us and our student and instructor community. These Terms apply to all your activities on the VirtualLearn mobile application and our APIs and other related services (“Services”).</string>
+        <string name="string_3">\n\nIf you publish a course on the VirtualLearn platform, you must also agree to the Instructor Terms. We also provide details regarding our processing of personal data of our students and instructors in our Privacy Policy. If you are using VirtualLearn as part of your employer’s VirtualLearn For Business learning and development program, you can consult our VirtualLearn for Business Privacy Statement.</string>
+ </string>
+    <string name="policy">This Privacy Policy was last updated on November 14, 2022.
+        <string name="string_4">\n\nThank you for joining the world’s largest online learning marketplace. We at VirtuaLearn (“VirtuaLearn”, “we”, “us”) respect your privacy and want you to understand how we collect, use, and share data about you. This Privacy Policy covers our data collection practices and describes your rights to access, correct, or restrict our use of your personal data.</string>
+        <string name="string_5">\n\nUnless we link to a different policy or state otherwise, this Privacy Policy applies when you visit or use the VirtuaLearn mobile application, APIs or related services (the “Services”).</string>
+        <string name="string_6">\n\nBy using the Services, you agree to the terms of this Privacy Policy. You shouldn’t use the Services if you don’t agree with this Privacy Policy or any other agreement that governs your use of the Services.</string>
+    </string>
+
+    <string name="chapter_details">%1$d Chapter | %2$d lessons | %3$s length</string>
+    <string name="chapter_heading_str">Chapter %1$d : %2$s</string>
+    <string name="duration">%1$s mins</string>
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/testid_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="5dp"
+    android:theme="@style/Theme.MaterialComponents.Light">
+
+    <ImageView
+        android:id="@+id/videocompletionindicator_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="10dp"
+        android:src="@drawable/icn_timeline_inactive"
+        android:visibility="gone" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:elevation="0dp"
+        android:visibility="visible"
+        app:cardCornerRadius="10dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#40E1E1E1">
+
+            <ImageView
+                android:id="@+id/img_quiz"
+                android:layout_width="24dp"
+                android:layout_height="34dp"
+                android:layout_marginVertical="19dp"
+                android:layout_marginStart="24dp"
+                android:src="@drawable/icn_moduletest"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_quiz"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/test_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="10sp"
+                    android:fontFamily="@font/proxima_nova_semibold"
+                    android:text="Module Test 2"
+                    android:textColor="#042C5C"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@id/img_quiz"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/test_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/proxima_nova_regular"
+                    android:text="5mins | 4 questions"
+                    android:textColor="#7A7A7A"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@id/img_quiz"
+                    app:layout_constraintTop_toBottomOf="@id/test_title" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/test_result"
+                layout="@layout/test_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
